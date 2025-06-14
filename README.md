@@ -58,6 +58,7 @@ multi_agent_system/
 ✅ Beginner-friendly
 
 #Note on Multi-Agent AI System Execution and Weather Forecast Handling
+
   The multi-agent AI system for evaluating upcoming SpaceX launches was successfully executed. The agents collaborated effectively to fetch launch data, obtain weather forecasts, analyze launch conditions, and determine the final launch status.
 
   The weather agent integrated with the Open-Meteo API and correctly matched the launch hour from the API response. However, since the system tested a historical launch (USSF-44 on 2022-11-01), the API returned null values for temperature, precipitation, and wind speed due to unavailable archived hourly data. The code was updated to gracefully handle such cases by applying default values (0.0) to ensure robust and uninterrupted operation.
